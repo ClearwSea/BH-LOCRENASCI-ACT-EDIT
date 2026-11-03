@@ -1,0 +1,7 @@
+{
+  "source": "nx-compat.1 packaged runtime / server19 common.2 compatible tables",
+  "stagedata_sha256": "78c709a0e12568213cfed46d6e36ccf8810071ded57f0da2bda31670c5662400",
+  "story_count": 189,
+  "extra_count": 61,
+  "note": "Only identifiers and unlock constraints; no resources or account data."
+}

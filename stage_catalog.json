@@ -1,0 +1,2836 @@
+{
+  "story": [
+    {
+      "id": 10101,
+      "level": 1,
+      "stars": 3,
+      "pre": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10102,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10101
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10103,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10102
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10104,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10103
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10105,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10104
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10106,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10105
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10107,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10106
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10108,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10107
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10109,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10108
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10110,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10109
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10111,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10110
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10112,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10111
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10113,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10112
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10114,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10113
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10115,
+      "level": 1,
+      "stars": 3,
+      "pre": [
+        10114
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10116,
+      "level": 3,
+      "stars": 3,
+      "pre": [
+        10115
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10117,
+      "level": 3,
+      "stars": 3,
+      "pre": [
+        10116
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10118,
+      "level": 3,
+      "stars": 3,
+      "pre": [
+        10117
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10119,
+      "level": 3,
+      "stars": 3,
+      "pre": [
+        10118
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10120,
+      "level": 3,
+      "stars": 3,
+      "pre": [
+        10119
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10121,
+      "level": 5,
+      "stars": 3,
+      "pre": [
+        10120
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10122,
+      "level": 5,
+      "stars": 3,
+      "pre": [
+        10121
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10123,
+      "level": 5,
+      "stars": 3,
+      "pre": [
+        10122
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10124,
+      "level": 5,
+      "stars": 3,
+      "pre": [
+        10123
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10125,
+      "level": 5,
+      "stars": 3,
+      "pre": [
+        10124
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10126,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10125
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10127,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10126
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10128,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10127
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10129,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10128
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10130,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10129
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10131,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10130
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10132,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10131
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 48
+    },
+    {
+      "id": 10133,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10132
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 52
+    },
+    {
+      "id": 10134,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10133
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 56
+    },
+    {
+      "id": 10135,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10134
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 60
+    },
+    {
+      "id": 10136,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10135
+      ],
+      "chapter": 1,
+      "difficulty": 1,
+      "unlock_stars": 65
+    },
+    {
+      "id": 10201,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10131
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10202,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10205
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10203,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10201
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10204,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10205
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10205,
+      "level": 7,
+      "stars": 3,
+      "pre": [
+        10203
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10206,
+      "level": 11,
+      "stars": 3,
+      "pre": [
+        10205
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10207,
+      "level": 11,
+      "stars": 3,
+      "pre": [
+        10210
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10208,
+      "level": 11,
+      "stars": 3,
+      "pre": [
+        10206
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10209,
+      "level": 11,
+      "stars": 3,
+      "pre": [
+        10210
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10210,
+      "level": 11,
+      "stars": 3,
+      "pre": [
+        10208
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10211,
+      "level": 13,
+      "stars": 3,
+      "pre": [
+        10210
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10212,
+      "level": 13,
+      "stars": 3,
+      "pre": [
+        10215
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10213,
+      "level": 13,
+      "stars": 3,
+      "pre": [
+        10215
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10214,
+      "level": 13,
+      "stars": 3,
+      "pre": [
+        10211
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10215,
+      "level": 13,
+      "stars": 3,
+      "pre": [
+        10214
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10216,
+      "level": 15,
+      "stars": 3,
+      "pre": [
+        10215
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10217,
+      "level": 15,
+      "stars": 3,
+      "pre": [
+        10216
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10218,
+      "level": 15,
+      "stars": 3,
+      "pre": [
+        10220
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10219,
+      "level": 15,
+      "stars": 3,
+      "pre": [
+        10220
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10220,
+      "level": 15,
+      "stars": 3,
+      "pre": [
+        10217
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10221,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10220
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10222,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10221
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10223,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10226
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10224,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10222
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10225,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10226
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10226,
+      "level": 17,
+      "stars": 3,
+      "pre": [
+        10224
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10227,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10226
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10228,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10232
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10229,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10227
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10230,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10232
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10231,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10229
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10232,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10231
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10233,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10232
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 54
+    },
+    {
+      "id": 10234,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10233
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 59
+    },
+    {
+      "id": 10235,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10234
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 63
+    },
+    {
+      "id": 10236,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10235
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 68
+    },
+    {
+      "id": 10237,
+      "level": 19,
+      "stars": 3,
+      "pre": [
+        10236
+      ],
+      "chapter": 2,
+      "difficulty": 1,
+      "unlock_stars": 72
+    },
+    {
+      "id": 10301,
+      "level": 21,
+      "stars": 3,
+      "pre": [
+        10232
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10302,
+      "level": 21,
+      "stars": 3,
+      "pre": [
+        10305
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10303,
+      "level": 21,
+      "stars": 3,
+      "pre": [
+        10301
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10304,
+      "level": 21,
+      "stars": 3,
+      "pre": [
+        10305
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10305,
+      "level": 21,
+      "stars": 3,
+      "pre": [
+        10303
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10306,
+      "level": 23,
+      "stars": 3,
+      "pre": [
+        10305
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10307,
+      "level": 23,
+      "stars": 3,
+      "pre": [
+        10309
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10308,
+      "level": 23,
+      "stars": 3,
+      "pre": [
+        10306
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10309,
+      "level": 23,
+      "stars": 3,
+      "pre": [
+        10308
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10310,
+      "level": 23,
+      "stars": 3,
+      "pre": [
+        10309
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10311,
+      "level": 25,
+      "stars": 3,
+      "pre": [
+        10309
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10312,
+      "level": 25,
+      "stars": 3,
+      "pre": [
+        10315
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10313,
+      "level": 25,
+      "stars": 3,
+      "pre": [
+        10315
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10314,
+      "level": 25,
+      "stars": 3,
+      "pre": [
+        10311
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10315,
+      "level": 25,
+      "stars": 3,
+      "pre": [
+        10314
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10316,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10315
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10317,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10320
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10318,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10316
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10319,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10320
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10320,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10318
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10321,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10320
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10322,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10320
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10323,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10327
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10324,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10322
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10325,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10327
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10326,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10327
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10327,
+      "level": 27,
+      "stars": 3,
+      "pre": [
+        10324
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10328,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10333
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10329,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10333
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10330,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10327
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10331,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10330
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10332,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10333
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10333,
+      "level": 29,
+      "stars": 3,
+      "pre": [
+        10331
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10334,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10333
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 61
+    },
+    {
+      "id": 10335,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10334
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 66
+    },
+    {
+      "id": 10336,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10335
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 70
+    },
+    {
+      "id": 10337,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10336
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 75
+    },
+    {
+      "id": 10338,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10337
+      ],
+      "chapter": 3,
+      "difficulty": 1,
+      "unlock_stars": 80
+    },
+    {
+      "id": 10401,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10333
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10402,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10404
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10403,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10404
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10404,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10401
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10405,
+      "level": 31,
+      "stars": 3,
+      "pre": [
+        10404
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10406,
+      "level": 32,
+      "stars": 3,
+      "pre": [
+        10404
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10407,
+      "level": 32,
+      "stars": 3,
+      "pre": [
+        10409
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10408,
+      "level": 32,
+      "stars": 3,
+      "pre": [
+        10409
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10409,
+      "level": 32,
+      "stars": 3,
+      "pre": [
+        10406
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10410,
+      "level": 32,
+      "stars": 3,
+      "pre": [
+        10409
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10411,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10409
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10412,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10415
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10413,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10411
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10414,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10415
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10415,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10413
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10416,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10415
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10417,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10415
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10418,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10421
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10419,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10421
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10420,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10417
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10421,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10420
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10422,
+      "level": 33,
+      "stars": 3,
+      "pre": [
+        10421
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10423,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10421
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10424,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10423
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10425,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10427
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10426,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10427
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10427,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10424
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10428,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10427
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10429,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10427
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10430,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10434
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10431,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10434
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10432,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10429
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10433,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10432
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10434,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10433
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10435,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10434
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 68
+    },
+    {
+      "id": 10436,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10435
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 73
+    },
+    {
+      "id": 10437,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10436
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 78
+    },
+    {
+      "id": 10438,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10437
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 83
+    },
+    {
+      "id": 10439,
+      "level": 35,
+      "stars": 3,
+      "pre": [
+        10438
+      ],
+      "chapter": 4,
+      "difficulty": 1,
+      "unlock_stars": 88
+    },
+    {
+      "id": 10501,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10434
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10502,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10506
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10503,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10506
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10504,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10501
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10505,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10504
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10506,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10505
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10507,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10506
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10508,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10512
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10509,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10507
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10510,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10509
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10511,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10510
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10512,
+      "level": 37,
+      "stars": 3,
+      "pre": [
+        10511
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10513,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10518
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10514,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10512
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10515,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10518
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10516,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10514
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10517,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10518
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10518,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10516
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10519,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10518
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10520,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10524
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10521,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10519
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10522,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10524
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10523,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10521
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10524,
+      "level": 39,
+      "stars": 3,
+      "pre": [
+        10523
+      ],
+      "chapter": 5,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10601,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10524
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10602,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10601
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10603,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10602
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10604,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10603
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10605,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10604
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10606,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10605
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10607,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10606
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10608,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10607
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10609,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10608
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10610,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10609
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10611,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10610
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10612,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10611
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10613,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10612
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10614,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10613
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 10615,
+      "level": 40,
+      "stars": 3,
+      "pre": [
+        10614
+      ],
+      "chapter": 6,
+      "difficulty": 1,
+      "unlock_stars": 0
+    }
+  ],
+  "extra": [
+    {
+      "id": 210101,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210102,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210103,
+      "level": 21,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210104,
+      "level": 21,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210105,
+      "level": 21,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210106,
+      "level": 22,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210107,
+      "level": 22,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210108,
+      "level": 23,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210109,
+      "level": 23,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210110,
+      "level": 24,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210111,
+      "level": 24,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210112,
+      "level": 25,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210113,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210114,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210115,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210116,
+      "level": 27,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210117,
+      "level": 27,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210118,
+      "level": 28,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210119,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210120,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 210121,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211101,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211102,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211103,
+      "level": 21,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211104,
+      "level": 21,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211105,
+      "level": 22,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211106,
+      "level": 23,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211107,
+      "level": 23,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211108,
+      "level": 24,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211109,
+      "level": 24,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211110,
+      "level": 25,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211111,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211112,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211113,
+      "level": 26,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211114,
+      "level": 27,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211115,
+      "level": 27,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211116,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211117,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 211118,
+      "level": 29,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214101,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214102,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214103,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214104,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214106,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214107,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214108,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214109,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214111,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214112,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214113,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214114,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214116,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214117,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214118,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 214119,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217101,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217102,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217103,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217104,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217105,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    },
+    {
+      "id": 217106,
+      "level": 20,
+      "stars": 3,
+      "pre": [],
+      "chapter": 0,
+      "difficulty": 1,
+      "unlock_stars": 0
+    }
+  ],
+  "extra_level": 30,
+  "story_missions": [
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027,
+    10028,
+    10029,
+    10030,
+    14001,
+    10032,
+    10034,
+    10036,
+    10033,
+    10037,
+    10035,
+    10039,
+    10038,
+    10041,
+    10040,
+    10042,
+    10043,
+    10045,
+    10044,
+    10046,
+    10047,
+    10049,
+    10048,
+    10050,
+    10051,
+    10054,
+    10052,
+    10056,
+    10053,
+    10059,
+    10055,
+    10061,
+    10057,
+    10065,
+    10058,
+    10067,
+    10060,
+    10070,
+    10062,
+    10073,
+    10075,
+    14002,
+    10064,
+    10076,
+    10066,
+    10080,
+    10068,
+    10082,
+    10069,
+    10084,
+    10071,
+    10086,
+    10072,
+    10088,
+    10074,
+    10089,
+    10077,
+    10091,
+    10078,
+    10092,
+    10079,
+    10095,
+    10081,
+    10098,
+    10083,
+    10099,
+    10085,
+    10101,
+    10087,
+    10103,
+    10090,
+    10104,
+    10093,
+    10106,
+    10094,
+    10108,
+    10110,
+    14003,
+    10097,
+    10112,
+    10100,
+    10114,
+    10102,
+    10115,
+    10105,
+    10118,
+    10107,
+    10121,
+    10109,
+    10122,
+    10111,
+    10124,
+    10113,
+    10126,
+    10116,
+    10127,
+    10117,
+    10119,
+    10120,
+    10123,
+    10125,
+    10128,
+    10129,
+    14004,
+    12131,
+    12132,
+    12133,
+    12134,
+    12135,
+    12136,
+    12137,
+    12138,
+    12155,
+    12156,
+    12157,
+    12158,
+    12159,
+    12160,
+    12161,
+    12162
+  ],
+  "mission_policy": "deployed24_scoped_story_manual_claim",
+  "extra_missions": [
+    60001,
+    60002,
+    60003,
+    60004,
+    60005,
+    60006,
+    60007,
+    60048,
+    60049,
+    60050,
+    60051,
+    60052,
+    60090,
+    60091,
+    60092,
+    60093,
+    60094,
+    60132,
+    60133,
+    60134,
+    60135,
+    60170,
+    60171,
+    60172,
+    60173,
+    60174,
+    60194,
+    60195,
+    60196,
+    60197,
+    60198,
+    60224,
+    60225,
+    60226,
+    60227,
+    60228,
+    60293,
+    60294,
+    60295,
+    60296,
+    60302,
+    60303,
+    60304,
+    60305,
+    60311,
+    60312,
+    60313,
+    60314,
+    60320,
+    60321,
+    60322,
+    60323
+  ]
+}

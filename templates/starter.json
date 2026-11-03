@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "fixture": "server19-single-avatar-initialization",
+  "uid": 1024,
+  "account_mode": "starter-template",
+  "is_first_login": false,
+  "main": {
+    "nickname": "免费版本禁止倒卖",
+    "self_desc": "开源免费版本，仅供学习与技术交流，禁止倒卖，版权归米哈游所有",
+    "level": 1,
+    "exp": 0,
+    "hcoin": 0,
+    "scoin": 0,
+    "stamina": 80,
+    "skill_point": 0,
+    "skill_point_limit": 20,
+    "equipment_size_limit": 100,
+    "assistant_avatar_id": 101,
+    "friends_point": 0
+  },
+  "avatar_list": [
+    {
+      "avatar_id": 101,
+      "star": 1,
+      "level": 1,
+      "exp": 0,
+      "fragment": 0,
+      "weapon_unique_id": 1,
+      "touch_goodfeel": 0,
+      "stage_goodfeel": 0,
+      "today_has_add_goodfeel": 0,
+      "stigmata_unique_id_1": 0,
+      "stigmata_unique_id_2": 0,
+      "stigmata_unique_id_3": 0,
+      "skill_list": [],
+      "dress_list": []
+    }
+  ],
+  "weapon_list": [
+    {
+      "unique_id": 1,
+      "id": 20001,
+      "level": 1,
+      "exp": 0,
+      "is_protected": false
+    }
+  ],
+  "stigmata_list": [],
+  "material_list": [],
+  "guide_id_list": [],
+  "has_got_item_id_list": [
+    20001
+  ],
+  "avatar_team_list": [
+    {
+      "stage_type": 1,
+      "avatar_id_list": [
+        101
+      ]
+    }
+  ],
+  "assistant_avatar_id": 101,
+  "stage_list": [
+    {
+      "id": 10101,
+      "progress": 0,
+      "enter_times": 0,
+      "reset_times": 0,
+      "assist_enter_times": 0,
+      "challenge_index_list": [],
+      "stamina_discount": 100,
+      "is_done": false
+    }
+  ],
+  "stage_runtime": {
+    "schema": 1,
+    "active": null,
+    "settlements": []
+  },
+  "mission_data": {
+    "mission_list": [],
+    "daily_duty_point": 0,
+    "has_take_daily_duty_id_list": []
+  }
+}

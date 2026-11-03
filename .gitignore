@@ -1,0 +1,8 @@
+.build-env/
+build/
+dist/
+__pycache__/
+*.spec
+
+release/**/*.zip
+*.bak
