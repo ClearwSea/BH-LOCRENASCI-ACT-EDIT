@@ -1,3 +1,5 @@
+[中文](README.md) · [English](README_ENG.md)
+
 # BH-LOCRENASCI-ACT-EDIT
 
 **BH3 V1.9 存档修改器**，一个使用 Python / Tkinter 编写的离线存档编辑工具。
