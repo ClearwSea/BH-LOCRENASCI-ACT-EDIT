@@ -1,5 +1,7 @@
 [中文](README.md) · [English](README_ENG.md)
 
+> This README was generated automatically by an Agent; please refer to the actual project state as authoritative.
+
 # BH-LOCRENASCI-ACT-EDIT
 
 **BH3 V1.9 save editor.** An offline save-editing tool written in Python / Tkinter.

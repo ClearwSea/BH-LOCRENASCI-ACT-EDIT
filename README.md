@@ -1,5 +1,7 @@
 [中文](README.md) · [English](README_ENG.md)
 
+> 本 README 由 Agent 自动生成，内容请以实际情况为准。
+
 # BH-LOCRENASCI-ACT-EDIT
 
 **BH3 V1.9 存档修改器**，一个使用 Python / Tkinter 编写的离线存档编辑工具。
