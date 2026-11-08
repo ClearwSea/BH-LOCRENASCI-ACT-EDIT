@@ -14,7 +14,7 @@ Linked documents in this repository are still in Chinese.
 
 [GitHub Releases](https://github.com/ClearwSea/BH-LOCRENASCI-ACT-EDIT/releases)
 
-- [v0.7 Windows build](release/v0.7/README.md)
+- [v0.8.1 Windows build](release/v0.8.1/README.md)
 - [Android instructions](docs/使用方式-Android.md)
 - [NS instructions](docs/使用方式-NS.md)
 - [Run and build from source](docs/README.md)
@@ -51,3 +51,5 @@ This tool only handles fields that have been identified. Opening every save fiel
 ## Source and license
 
 See [NOTICE](NOTICE.md). Original code in this project is under the [MIT License](LICENSE), copyright ClearwSea. Third-party licenses keep their original text. Rights in the game name and related content belong to their holders. This project is not affiliated with the official developers.
+
+New starter accounts offer an optional first-login opening sequence (off by default; requires Android V0.1.3 or later). The switch is available for new starter accounts at captain level 1. Changing to another level unchecks it; saving disables first login for any captain level other than 1.

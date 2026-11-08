@@ -12,7 +12,7 @@
 
 [GitHub Releases](https://github.com/ClearwSea/BH-LOCRENASCI-ACT-EDIT/releases)
 
-- [v0.7 Windows 版本](release/v0.7/README.md)
+- [v0.8.1 Windows 版本](release/v0.8.1/README.md)
 - [Android 使用说明](docs/使用方式-Android.md)
 - [NS 使用说明](docs/使用方式-NS.md)
 - [源码运行和构建](docs/README.md)
@@ -31,7 +31,7 @@
 
 ## 内置账号模板
 
-- **新号**：舰长、初始白练及初始武器均为 1 级。
+- **新号**：舰长、初始白练及初始武器均为 1 级，仅舰长等级为1时可选“首次登录”开场流程（默认关闭，需 Android V0.1.3 或更新构建；修改等级会自动取消）。
 - **满级体验号**：舰长及 26 位女武神 80 级，剧情与外传满星，樱色轮回第四轮 PART1，已验证装备目录、皮肤与满好感；默认体力 160、10 万金币、1000 水晶。
 
 两个模板的昵称与签名在编辑器内只读，重新打开模板档仍保留限制。游戏内修改不受限制。模板并非完整游戏数据，装备覆盖范围见使用说明。

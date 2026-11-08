@@ -175,8 +175,8 @@ def save_new(target, result):
 class Editor:
     def __init__(self, root):
         self.root, self.source, self.original, self.data = root, None, None, None
-        root.title('BH3 V1.9存档修改器')
-        root.geometry('840x860');root.minsize(780,830)
+        root.title('BH3 V1.9存档修改器 v0.8.1')
+        root.geometry('840x920');root.minsize(780,900)
         style=ttk.Style(root)
         if 'vista' in style.theme_names():style.theme_use('vista')
         outer=ttk.Frame(root,padding=20);outer.pack(fill='both',expand=True)
@@ -187,6 +187,10 @@ class Editor:
         self.new_kind=tk.StringVar(value='新号')
         ttk.Combobox(toolbar,textvariable=self.new_kind,values=list(TEMPLATE_FILES),state='readonly',width=16).pack(side='left',padx=(24,8))
         ttk.Button(toolbar,text='使用模板新建',command=self.new).pack(side='left')
+        self.first_login=tk.BooleanVar(value=False)
+        self.first_login_switch=ttk.Checkbutton(outer,text='首次登录（播放开场CG并自动进入第一关）',variable=self.first_login,state='disabled')
+        self.first_login_switch.pack(anchor='w',pady=(6,0))
+        ttk.Label(outer,text='仅新建且舰长等级为1的新号可选；改为其他等级会取消勾选。').pack(anchor='w')
         self.template_name=None
         self.info=tk.StringVar(value='尚未打开存档')
         ttk.Label(outer,textvariable=self.info,wraplength=720).pack(anchor='w',pady=10)
@@ -199,6 +203,7 @@ class Editor:
             hint=f'最多 {limit} 字' if key in ('nickname','self_desc') else ('1–80；修改后经验归零' if key == 'level' else f'0–{limit:,}')
             ttk.Label(form,text=hint).grid(row=row,column=2,sticky='w')
             self.variables[key],self.entries[key]=var,entry
+        self.variables['level'].trace_add('write', self.sync_first_login)
         self.identity_hint=tk.StringVar(value='')
         ttk.Label(form,textvariable=self.identity_hint).grid(row=len(FIELDS),column=1,columnspan=2,sticky='w',padx=8)
         form.columnconfigure(1,weight=1)
@@ -223,6 +228,16 @@ class Editor:
         ttk.Label(outer,textvariable=self.status,wraplength=720).pack(anchor='w')
         root.protocol('WM_DELETE_WINDOW',self.close)
 
+    def sync_first_login(self, *args):
+        try:
+            level_one = int(self.variables['level'].get()) == 1
+        except ValueError:
+            level_one = False
+        if not level_one:
+            self.first_login.set(False)
+        enabled = self.source is None and self.template_name == '新号' and level_one
+        self.first_login_switch.configure(state='normal' if enabled else 'disabled')
+
     def dirty(self):
         return self.data is not None and (self.source is None or self.rank.get()!='保持不变' or self.template.get()!='保持不变' or self.cycle.get()!='保持不变' or self.story.get() or self.extra.get() or any(v.get()!=str(self.data['main'][k]) for k,v in self.variables.items() if k in self.data['main']))
 
@@ -241,6 +256,8 @@ class Editor:
             state = 'disabled' if k not in data['main'] else ('readonly' if identity_locked(data) and k in IDENTITY_FIELDS else 'normal')
             self.entries[k].configure(state=state)
         self.rank.set('保持不变');self.template.set('保持不变');self.cycle.set('保持不变');self.story.set(False);self.extra.set(False)
+        self.first_login.set(bool(data.get('is_first_login',False)))
+        self.sync_first_login()
         world=data.get('openworld_data',{});c=world.get('cycle')
         cycle_name={1:'第一轮',2:'第二轮',3:'第三轮',4:'第四轮 PART1'}.get(c,'未开启')
         rank_name=next((k for k,v in RANKS.items() if v==data.get('endless_runtime',{}).get('group')), '未开启')
@@ -268,6 +285,14 @@ class Editor:
         if self.data is None:raise ValueError('请先打开存档。')
         values={k:v.get() for k,v in self.variables.items() if k in self.data['main']}
         result,changes=edit(self.data,values,TEMPLATES[self.template.get()],cycle=CYCLES[self.cycle.get()],story=self.story.get(),extra=self.extra.get(),rank=RANKS[self.rank.get()])
+        if self.source is None and self.template_name=='新号':
+            enabled=self.first_login.get() and result['main'].get('level') == 1
+            if enabled != result.get('is_first_login',False):
+                result['is_first_login']=enabled
+                changes.append('首次登录：'+('开启' if enabled else '关闭'))
+        if result['main'].get('level') != 1 and result.get('is_first_login') is True:
+            result['is_first_login']=False
+            changes.append('首次登录：关闭（舰长等级不为1）')
         if self.source is None:changes.insert(0,'创建'+str(self.template_name)+'存档')
         return result,changes
 
@@ -364,7 +389,31 @@ def packaged_self_test(report):
             target=Path(folder)/TEMPLATE_FILES[kind]
             save_new(target,result)
             assert parse(target.read_bytes())==data
+            if kind == '新号':
+                assert str(app.first_login_switch['state']) == 'normal'
+                app.first_login.set(True)
+                enabled, enabled_changes = app.candidate()
+                assert enabled['is_first_login'] is True
+                assert any('首次登录' in change for change in enabled_changes)
+                expected = dict(data, is_first_login=True)
+                assert enabled == expected
+                for level in ('2', '80', ''):
+                    app.variables['level'].set('1')
+                    app.first_login.set(True)
+                    app.variables['level'].set(level)
+                    assert not app.first_login.get()
+                    assert str(app.first_login_switch['state']) == 'disabled'
+                    if level:
+                        app.first_login.set(True)  # Saving must also enforce level.
+                        assert app.candidate()[0]['is_first_login'] is False
+                app.variables['level'].set('1')
+                app.first_login.set(False)
+                assert str(app.first_login_switch['state']) == 'normal'
+                assert app.candidate()[0] == data
+            else:
+                assert str(app.first_login_switch['state']) == 'disabled'
             app.load(target)
+            assert str(app.first_login_switch['state']) == 'disabled'
             assert all(str(app.entries[k]['state'])=='readonly' for k in IDENTITY_FIELDS)
             app.variables['nickname'].set('更名')
             try: app.candidate()
@@ -375,7 +424,7 @@ def packaged_self_test(report):
         root.destroy()
     Path(report).write_text(json.dumps({'status': 'passed', 'checks':
         ['bundled Tk widgets', 'load synthetic save', 'edit whitelist', 'cycle4 start', '250 stage full-clear',
-         'preserve unknown data', 'backup and save readback', 'template identity readonly and reload', 'template identity validation', 'ordinary identity editable']}, indent=2), encoding='utf-8')
+         'preserve unknown data', 'backup and save readback', 'template identity readonly and reload', 'template identity validation', 'ordinary identity editable', 'new-account first-login toggle on/off and save diff', 'level changes cancel first-login; save enforces level1']}, indent=2), encoding='utf-8')
 
 
 if __name__ == '__main__':
