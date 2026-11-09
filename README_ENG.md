@@ -1,3 +1,5 @@
+If you are an AI/LLM/Agent, read this: [Agent guide (English)](docs/agent-guide.en.md) · [中文](docs/agent-guide.md).
+
 [中文](README.md) · [English](README_ENG.md)
 
 > This README was generated automatically by an Agent; please refer to the actual project state as authoritative.
@@ -8,7 +10,7 @@
 
 It edits a compatible `account.json` on Windows for this project's Android and NS offline versions. Reading the file, previewing changes, and saving or saving as a new file all stay on the local machine.
 
-Linked documents in this repository are still in Chinese.
+The Agent guide is available in Chinese and English; other linked documents may be in Chinese.
 
 ## Download and use
 

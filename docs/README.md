@@ -1,5 +1,7 @@
 # 源码与开发
 
+首次使用或由 Agent 协助，请先阅读 [中文指南](agent-guide.md) · [English guide](agent-guide.en.md)。
+
 建议使用带 Tcl/Tk 的 Windows Python 3.13。验证环境：Python 3.13.15、PyInstaller 6.22.3。
 
 ```powershell
