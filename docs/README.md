@@ -22,6 +22,7 @@ python -m venv .build-env
 - `save_editor.py`：界面、输入校验、模板只读字段、文件备份和保存。
 - `progression.py`：剧情、外传、轮回与深渊逻辑。
 - `stage_catalog.json`：最小关卡目录。
+- `costumes.py` / `costume_catalog.json`：服装持有编辑与46套服装的角色适配标识。
 - `templates/`：预生成的新号和体验号。
 - `test_save_editor.py`：保存安全、字段边界、模板及进度测试。
 

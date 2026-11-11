@@ -51,6 +51,59 @@ class Tests(unittest.TestCase):
             self.assertEqual(source.read_bytes(),raw)
             with self.assertRaises(ValueError):save(source,raw,target,fixture())
 
+class CostumeTests(unittest.TestCase):
+    def account(self):
+        a=fixture();a['avatar_list']=[{'avatar_id':101,'dress_list':[99999],'dress_id':99999}, {'avatar_id':102,'dress_list':[]}]
+        a['has_got_item_id_list']=[123,99999]
+        return a
+
+    def test_default_preserves_partial_ownership(self):
+        a=self.account();self.assertEqual(edit(a,{})[0],a)
+
+    def test_unlock_shared_and_preserve_unknown(self):
+        from costumes import catalog
+        a=self.account();before=copy.deepcopy(a);b,changes=edit(a,{},costumes=True)
+        self.assertEqual(a,before);self.assertTrue(changes)
+        self.assertEqual(len(b['avatar_list']),2)
+        for av in b['avatar_list']:
+            expected={r['dress_id'] for r in catalog() if av['avatar_id'] in r['avatar_ids']}
+            self.assertTrue(expected<=set(av['dress_list']))
+            self.assertTrue(expected<=set(b['has_got_item_id_list']))
+        self.assertIn(99999,b['avatar_list'][0]['dress_list'])
+        self.assertEqual(b['avatar_list'][0]['dress_id'],99999)
+        self.assertEqual(edit(b,{},costumes=True),(b,[]))
+
+    def test_lock_equipped_and_preserve_other_items(self):
+        a,_=edit(self.account(),{},costumes=True);a['avatar_list'][0]['dress_id']=50019
+        b,changes=edit(a,{},costumes=False)
+        self.assertEqual(b['avatar_list'][0]['dress_list'],[99999])
+        self.assertEqual(b['avatar_list'][0]['dress_id'],0)
+        self.assertEqual(b['has_got_item_id_list'],[123,99999])
+        self.assertEqual(b['unknown'],a['unknown']);self.assertTrue(changes)
+        self.assertEqual(edit(b,{},costumes=False),(b,[]))
+
+    def test_all46_experience_and_starter_scope(self):
+        from save_editor import load_template
+        from costumes import catalog
+        self.assertEqual(len(catalog()),46)
+        a=load_template('满级体验号');b,_=edit(a,{},costumes=True)
+        self.assertTrue({r['dress_id'] for r in catalog()}<=set(b['has_got_item_id_list']))
+        starter=load_template('新号');b,_=edit(starter,{},costumes=True)
+        self.assertEqual(len(b['avatar_list']),len(starter['avatar_list']))
+        self.assertEqual(b['main'],starter['main'])
+
+    def test_malformed_is_atomic_and_ignored_when_unchanged(self):
+        a=self.account();a['avatar_list'][1]['dress_list']=None;before=copy.deepcopy(a)
+        with self.assertRaises(ValueError):edit(a,{},costumes=True)
+        self.assertEqual(a,before);self.assertEqual(edit(a,{})[0],a)
+
+    def test_save_roundtrip_and_backup(self):
+        a=self.account();b,_=edit(a,{},costumes=True)
+        with tempfile.TemporaryDirectory() as folder:
+            p=Path(folder)/'account.json';raw=json.dumps(a).encode();p.write_bytes(raw)
+            backup=save(p,raw,p,b)
+            self.assertEqual(backup.read_bytes(),raw);self.assertEqual(parse(p.read_bytes()),b)
+
 class ProgressionTests(unittest.TestCase):
     def world(self):
         a=fixture();a['main']['level']=80

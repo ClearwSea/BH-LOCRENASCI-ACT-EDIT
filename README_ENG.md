@@ -16,7 +16,7 @@ The Agent guide is available in Chinese and English; other linked documents may 
 
 [GitHub Releases](https://github.com/ClearwSea/BH-LOCRENASCI-ACT-EDIT/releases)
 
-- [v0.8.1 Windows build](release/v0.8.1/README.md)
+- [v0.8.2 Windows build](release/v0.8.2/README.md)
 - [Android instructions](docs/使用方式-Android.md)
 - [NS instructions](docs/使用方式-NS.md)
 - [Run and build from source](docs/README.md)
@@ -27,6 +27,7 @@ The Agent guide is available in Chinese and English; other linked documents may 
 
 - Captain level (1–80), coins, crystals, stamina, and friend points.
 - Nickname and signature on an ordinary save.
+- Costume ownership: unchanged, unlock all, or lock all. Supports46 costumes for existing avatars; locking restores default outfits.
 - Sakura Samsara: cycle 1 through cycle 4 PART1, continuing from the start of the selected cycle.
 - Full completion with full stars for the story and side stories. Related missions are marked claimed, and rewards are not reissued.
 - Abyss progress to floor 32, and a choice among seven ranks.
@@ -46,7 +47,7 @@ Existing files are backed up automatically before saving, and the tool checks wh
 
 ## Development and contributions
 
-Running depends only on the Python standard library and Tcl/Tk. The current version includes 35 automated tests. Compatibility issues are welcome when explained with a minimized sample that has personal data removed. Do not submit real accounts, keys, or game installers.
+Running depends only on the Python standard library and Tcl/Tk. The current version includes 41 automated tests. Compatibility issues are welcome when explained with a minimized sample that has personal data removed. Do not submit real accounts, keys, or game installers.
 
 This tool only handles fields that have been identified. Opening every save field is not the goal. Support covers compatible V1.9 offline saves, not official online accounts.
 

@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "source": "V0.1.5 ARM32 compatible dressdata; identifiers only",
+  "source_sha256": "28a80887ba1a81baaba64044af19818466c1dae6cf071aa874a5be25c5d1d5fa",
+  "dresses": [
+    {
+      "dress_id": 50001,
+      "avatar_ids": [
+        104
+      ]
+    },
+    {
+      "dress_id": 50002,
+      "avatar_ids": [
+        201
+      ]
+    },
+    {
+      "dress_id": 50003,
+      "avatar_ids": [
+        301
+      ]
+    },
+    {
+      "dress_id": 50004,
+      "avatar_ids": [
+        102
+      ]
+    },
+    {
+      "dress_id": 50005,
+      "avatar_ids": [
+        104
+      ]
+    },
+    {
+      "dress_id": 50006,
+      "avatar_ids": [
+        303
+      ]
+    },
+    {
+      "dress_id": 50007,
+      "avatar_ids": [
+        403
+      ]
+    },
+    {
+      "dress_id": 50008,
+      "avatar_ids": [
+        201
+      ]
+    },
+    {
+      "dress_id": 50009,
+      "avatar_ids": [
+        101
+      ]
+    },
+    {
+      "dress_id": 50010,
+      "avatar_ids": [
+        103
+      ]
+    },
+    {
+      "dress_id": 50011,
+      "avatar_ids": [
+        204
+      ]
+    },
+    {
+      "dress_id": 50012,
+      "avatar_ids": [
+        304
+      ]
+    },
+    {
+      "dress_id": 50013,
+      "avatar_ids": [
+        404
+      ]
+    },
+    {
+      "dress_id": 50014,
+      "avatar_ids": [
+        402
+      ]
+    },
+    {
+      "dress_id": 50015,
+      "avatar_ids": [
+        302
+      ]
+    },
+    {
+      "dress_id": 50016,
+      "avatar_ids": [
+        203
+      ]
+    },
+    {
+      "dress_id": 50017,
+      "avatar_ids": [
+        402
+      ]
+    },
+    {
+      "dress_id": 50018,
+      "avatar_ids": [
+        201,
+        202,
+        203,
+        204
+      ]
+    },
+    {
+      "dress_id": 50019,
+      "avatar_ids": [
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "dress_id": 50020,
+      "avatar_ids": [
+        301,
+        302,
+        303,
+        304
+      ]
+    },
+    {
+      "dress_id": 50021,
+      "avatar_ids": [
+        501
+      ]
+    },
+    {
+      "dress_id": 50022,
+      "avatar_ids": [
+        302
+      ]
+    },
+    {
+      "dress_id": 50023,
+      "avatar_ids": [
+        211
+      ]
+    },
+    {
+      "dress_id": 50024,
+      "avatar_ids": [
+        212
+      ]
+    },
+    {
+      "dress_id": 50025,
+      "avatar_ids": [
+        501
+      ]
+    },
+    {
+      "dress_id": 50026,
+      "avatar_ids": [
+        502
+      ]
+    },
+    {
+      "dress_id": 50027,
+      "avatar_ids": [
+        502
+      ]
+    },
+    {
+      "dress_id": 50028,
+      "avatar_ids": [
+        503
+      ]
+    },
+    {
+      "dress_id": 50029,
+      "avatar_ids": [
+        401,
+        402,
+        403,
+        404
+      ]
+    },
+    {
+      "dress_id": 50030,
+      "avatar_ids": [
+        501,
+        502,
+        503
+      ]
+    },
+    {
+      "dress_id": 50031,
+      "avatar_ids": [
+        211,
+        212
+      ]
+    },
+    {
+      "dress_id": 50032,
+      "avatar_ids": [
+        302
+      ]
+    },
+    {
+      "dress_id": 50033,
+      "avatar_ids": [
+        203
+      ]
+    },
+    {
+      "dress_id": 50034,
+      "avatar_ids": [
+        211
+      ]
+    },
+    {
+      "dress_id": 50035,
+      "avatar_ids": [
+        303
+      ]
+    },
+    {
+      "dress_id": 50036,
+      "avatar_ids": [
+        311
+      ]
+    },
+    {
+      "dress_id": 50037,
+      "avatar_ids": [
+        311
+      ]
+    },
+    {
+      "dress_id": 50038,
+      "avatar_ids": [
+        504
+      ]
+    },
+    {
+      "dress_id": 50039,
+      "avatar_ids": [
+        213
+      ]
+    },
+    {
+      "dress_id": 50040,
+      "avatar_ids": [
+        102
+      ]
+    },
+    {
+      "dress_id": 50041,
+      "avatar_ids": [
+        401
+      ]
+    },
+    {
+      "dress_id": 50042,
+      "avatar_ids": [
+        112
+      ]
+    },
+    {
+      "dress_id": 50043,
+      "avatar_ids": [
+        112
+      ]
+    },
+    {
+      "dress_id": 50044,
+      "avatar_ids": [
+        301
+      ]
+    },
+    {
+      "dress_id": 50045,
+      "avatar_ids": [
+        102
+      ]
+    },
+    {
+      "dress_id": 50046,
+      "avatar_ids": [
+        201
+      ]
+    }
+  ]
+}

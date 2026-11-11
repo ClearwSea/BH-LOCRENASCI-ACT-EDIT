@@ -17,6 +17,7 @@ FIELDS = {
 }
 TEMPLATES = {'保持不变': None, '到达32关': 31}
 from progression import CYCLES, RANKS, unlock, set_cycle, set_rank
+from costumes import CHOICES as COSTUMES, set_costumes
 
 
 def parse(raw):
@@ -48,7 +49,7 @@ def check_identity(original, result):
         raise ValueError('模板存档的昵称和签名不可在编辑器中修改。')
 
 
-def edit(data, values, template=None, now=None, *, cycle=None, story=False, extra=False, rank=None):
+def edit(data, values, template=None, now=None, *, cycle=None, story=False, extra=False, rank=None, costumes=None):
     result = copy.deepcopy(data)
     changes = []
     for key, text in values.items():
@@ -110,6 +111,9 @@ def edit(data, values, template=None, now=None, *, cycle=None, story=False, extr
         if enabled:
             change = unlock(result, kind, now)
             if change: changes.append(change)
+    if costumes is not None:
+        change = set_costumes(result, costumes)
+        if change: changes.append(change)
     return result, changes
 
 
@@ -175,8 +179,8 @@ def save_new(target, result):
 class Editor:
     def __init__(self, root):
         self.root, self.source, self.original, self.data = root, None, None, None
-        root.title('BH3 V1.9存档修改器 v0.8.1')
-        root.geometry('840x920');root.minsize(780,900)
+        root.title('BH3 V1.9存档修改器 v0.8.2')
+        root.geometry('840x1000');root.minsize(780,960)
         style=ttk.Style(root)
         if 'vista' in style.theme_names():style.theme_use('vista')
         outer=ttk.Frame(root,padding=20);outer.pack(fill='both',expand=True)
@@ -207,7 +211,7 @@ class Editor:
         self.identity_hint=tk.StringVar(value='')
         ttk.Label(form,textvariable=self.identity_hint).grid(row=len(FIELDS),column=1,columnspan=2,sticky='w',padx=8)
         form.columnconfigure(1,weight=1)
-        progress=ttk.LabelFrame(outer,text='剧情与关卡',padding=12);progress.pack(fill='x',pady=12)
+        progress=ttk.LabelFrame(outer,text='服装与关卡',padding=12);progress.pack(fill='x',pady=12)
         self.cycle=tk.StringVar(value='保持不变');self.template=tk.StringVar(value='保持不变');self.rank=tk.StringVar(value='保持不变')
         self.story=tk.BooleanVar(value=False);self.extra=tk.BooleanVar(value=False)
         ttk.Label(progress,text='樱色轮回',width=12).grid(row=0,column=0,sticky='w',pady=5)
@@ -220,6 +224,10 @@ class Editor:
         ttk.Checkbutton(progress,text='剧情关卡全部通关',variable=self.story).grid(row=4,column=0,columnspan=2,sticky='w',pady=3)
         ttk.Checkbutton(progress,text='外传关卡全部通关',variable=self.extra).grid(row=5,column=0,columnspan=2,sticky='w',pady=3)
         ttk.Label(progress,text='按演示存档模板设为全通，相关任务已领取；不补发奖励。',wraplength=690).grid(row=6,column=0,columnspan=3,sticky='w',pady=5)
+        self.costumes=tk.StringVar(value='保持不变')
+        ttk.Label(progress,text='服装解锁').grid(row=7,column=0,sticky='w',pady=5)
+        ttk.Combobox(progress,textvariable=self.costumes,values=list(COSTUMES),state='readonly',width=25).grid(row=7,column=1,sticky='w')
+        ttk.Label(progress,text='支持46套；解锁已有角色服装，锁定时换回默认。不改变游戏中的隐藏规则。',wraplength=690).grid(row=8,column=0,columnspan=3,sticky='w')
         actions=ttk.Frame(outer);actions.pack(fill='x',pady=10)
         ttk.Button(actions,text='预览修改',command=self.preview).pack(side='left')
         ttk.Button(actions,text='保存',command=lambda:self.write(False)).pack(side='right')
@@ -239,6 +247,7 @@ class Editor:
         self.first_login_switch.configure(state='normal' if enabled else 'disabled')
 
     def dirty(self):
+        if self.data is not None and self.costumes.get() != '保持不变':return True
         return self.data is not None and (self.source is None or self.rank.get()!='保持不变' or self.template.get()!='保持不变' or self.cycle.get()!='保持不变' or self.story.get() or self.extra.get() or any(v.get()!=str(self.data['main'][k]) for k,v in self.variables.items() if k in self.data['main']))
 
     def close(self):
@@ -256,6 +265,7 @@ class Editor:
             state = 'disabled' if k not in data['main'] else ('readonly' if identity_locked(data) and k in IDENTITY_FIELDS else 'normal')
             self.entries[k].configure(state=state)
         self.rank.set('保持不变');self.template.set('保持不变');self.cycle.set('保持不变');self.story.set(False);self.extra.set(False)
+        self.costumes.set('保持不变')
         self.first_login.set(bool(data.get('is_first_login',False)))
         self.sync_first_login()
         world=data.get('openworld_data',{});c=world.get('cycle')
@@ -284,7 +294,7 @@ class Editor:
     def candidate(self):
         if self.data is None:raise ValueError('请先打开存档。')
         values={k:v.get() for k,v in self.variables.items() if k in self.data['main']}
-        result,changes=edit(self.data,values,TEMPLATES[self.template.get()],cycle=CYCLES[self.cycle.get()],story=self.story.get(),extra=self.extra.get(),rank=RANKS[self.rank.get()])
+        result,changes=edit(self.data,values,TEMPLATES[self.template.get()],cycle=CYCLES[self.cycle.get()],story=self.story.get(),extra=self.extra.get(),rank=RANKS[self.rank.get()],costumes=COSTUMES[self.costumes.get()])
         if self.source is None and self.template_name=='新号':
             enabled=self.first_login.get() and result['main'].get('level') == 1
             if enabled != result.get('is_first_login',False):
@@ -421,10 +431,23 @@ def packaged_self_test(report):
             else: raise AssertionError('Template identity modification accepted')
         app.load(source)
         assert all(str(app.entries[k]['state'])=='normal' for k in IDENTITY_FIELDS)
+        sample['avatar_list']=[{'avatar_id':101,'dress_list':[]}]
+        app.bind_data(sample,json.dumps(sample).encode(),source)
+        assert app.costumes.get()=='保持不变' and not app.dirty()
+        app.costumes.set('全部解锁')
+        assert app.dirty()
+        dressed, dress_changes=app.candidate()
+        assert 50019 in dressed['avatar_list'][0]['dress_list']
+        assert 50019 in dressed['has_got_item_id_list']
+        target=Path(folder)/'costumes.json'
+        save_new(target,dressed);app.load(target)
+        assert app.costumes.get()=='保持不变' and not app.dirty()
+        app.costumes.set('全部锁定')
+        assert app.candidate()[0]['avatar_list'][0]['dress_list']==[]
         root.destroy()
     Path(report).write_text(json.dumps({'status': 'passed', 'checks':
         ['bundled Tk widgets', 'load synthetic save', 'edit whitelist', 'cycle4 start', '250 stage full-clear',
-         'preserve unknown data', 'backup and save readback', 'template identity readonly and reload', 'template identity validation', 'ordinary identity editable', 'new-account first-login toggle on/off and save diff', 'level changes cancel first-login; save enforces level1']}, indent=2), encoding='utf-8')
+         'preserve unknown data', 'backup and save readback', 'template identity readonly and reload', 'template identity validation', 'ordinary identity editable', 'new-account first-login toggle on/off and save diff', 'level changes cancel first-login; save enforces level1', 'costume unlock/lock, bundled catalog, dirty state and save/reload']}, indent=2), encoding='utf-8')
 
 
 if __name__ == '__main__':

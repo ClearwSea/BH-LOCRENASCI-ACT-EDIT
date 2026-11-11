@@ -1,3 +1,9 @@
+## v0.8.2 · 服装解锁 / Costume ownership
+
+新增服装解锁选项：保持不变、全部解锁、全部锁定。覆盖46套支持服装，仅授予已有角色；锁定时换回默认，保留未知服装与其他进度。支持预览、备份及保存后重载。客户端隐藏规则不变。
+
+Add unchanged/unlock-all/lock-all costume editing for46 supported costumes on existing avatars. Locking restores default outfits; unknown costumes and other progress are preserved. Includes previews, backups and reload checks; client visibility rules are unchanged.
+
 > 更新日志由Agent自动生成
 
 ## V0.8.1 · 本次改进

@@ -17,3 +17,6 @@ GUI、白名单编辑、备份、模板及进度处理来自现有 BH3 V1.9 存�
 - PyInstaller：GPL 及其分发例外，见 `licenses/PyInstaller-COPYING.txt`。构建钩子版本固定于 requirements-build.txt。
 
 这些组件的条款与本项目的 MIT 许可证分别适用。
+
+服装目录仅含46套服装标识与适用角色映射，来自V0.1.5 ARM32兼容表；来源指纹见 `costume_catalog.json`，不含图片或真实账号数据。
+The costume catalog contains identifiers and avatar mappings only, derived from the compatible V0.1.5 ARM32 table; provenance is recorded in costume_catalog.json.
