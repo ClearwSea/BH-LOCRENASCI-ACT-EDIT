@@ -2,11 +2,11 @@
 
 首次使用或由 Agent 协助，请先阅读 [中文指南](agent-guide.md) · [English guide](agent-guide.en.md)。
 
-建议使用带 Tcl/Tk 的 Windows Python 3.13。验证环境：Python 3.13.15、PyInstaller 6.22.3。
+源码运行需要带 Tcl/Tk 的 Windows Python；本次开发环境为 Python 3.14.7、Tcl/Tk 9.0，打包使用 PyInstaller 6.22.3。
 
 ```powershell
 python save_editor.py
-python -B -m unittest test_save_editor
+python -B -m unittest discover
 ```
 
 打包：
@@ -17,15 +17,14 @@ python -m venv .build-env
 .\build_exe.cmd
 ```
 
-输出为 `dist/BH3-V1.9-Save-Editor.exe`。运行、测试及打包均使用仓库附带的关卡目录和模板，无需原工程或游戏客户端。
+输出位置以 `build_exe.cmd` 为准。打包时需将 `editor_catalog.json` 嵌入单 EXE；编辑器运行、测试及普通打包无需原工程、游戏客户端或真实存档。重新生成目录需要自行构建并显式提供对应运行数据和原生库，见[目录来源](editor-catalog.md)。
 
-- `save_editor.py`：界面、输入校验、模板只读字段、文件备份和保存。
-- `progression.py`：剧情、外传、轮回与深渊逻辑。
-- `stage_catalog.json`：最小关卡目录。
-- `costumes.py` / `costume_catalog.json`：服装持有编辑与46套服装的角色适配标识。
-- `templates/`：预生成的新号和体验号。
-- `test_save_editor.py`：保存安全、字段边界、模板及进度测试。
+- `save_editor.py`、`advanced_editor.py`：基础与深度界面、工作副本、预览、备份和保存。
+- `editor_engine.py`、`editor_core/`：舰长、角色、装备、进度和舱室操作。
+- `catalog_loader.py`、`editor_catalog.json`：V0.2.0 精简编辑目录与独立加载。
+- `avatars.py`、`costumes.py`、`progression.py`：基础界面及兼容处理。
+- `test_*.py`：目录、业务操作、保存和界面检查。
 
-原工程的模板生成脚本依赖私有工程布局和原始表，此候选仓库不包含该脚本或输入。开发时直接维护预生成模板并运行测试；数据来源见 NOTICE。
+内置新号和体验号由 V0.2.0 目录生成，不复制真实账号，也不构造虚假的战斗结算；数据来源见 NOTICE。
 
-Windows ZIP 作为 GitHub Release 附件提供，Git 仓库保留版本说明和校验值，不追踪二进制包。
+Windows 发行物为单 EXE；Git 仓库不追踪构建产物。

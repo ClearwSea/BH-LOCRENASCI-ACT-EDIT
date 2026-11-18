@@ -45,7 +45,7 @@ This guide does not prescribe a permanently valid mirror or proxy address. If a 
 
 ## 1. What this repository does
 
-This is a desktop offline save editor for `account.json` used by the companion Android/NS offline versions. Create a save from a template, or open an existing save, preview changes, save, and restore it to the game. It does not supply the game client or handle official online accounts.
+This desktop offline editor creates or edits compatible `account.json` files, previews changes, and saves them for restoration to the game. The detailed catalog and progression rules target BH2017-LOCRENASCI V0.2.0; their compatibility with older Android builds, NS and other branches has not been verified. It does not supply the game client or handle official online accounts.
 
 Read the [README](../README_ENG.md), [source instructions](README.md), and the target platform's [Android instructions](使用方式-Android.md) or [NS instructions](使用方式-NS.md). **Using the editor alone does not require 1.9/2.4 APKs or 7.x resources.** If the user does not have a game installation, follow the appropriate game guide; request those materials only when undertaking a game build.
 
@@ -61,7 +61,7 @@ Before editing, stop the game and any server writing the save, copy the file to 
 
 ## 3. Obtain and start the editor
 
-Apply the network checks above to [this project's releases](https://github.com/ClearwSea/BH-LOCRENASCI-ACT-EDIT/releases). Read the current stable release notes, download the appropriate Windows asset, verify against supplied official checksums, and extract completely. Run the actual editor EXE in that package rather than guessing a versioned filename. Release packages generally do not require a separate Python installation; follow the current release instructions.
+Apply the network checks above to [this project's releases](https://github.com/ClearwSea/BH-LOCRENASCI-ACT-EDIT/releases). Read the release notes, download and verify the appropriate Windows asset. The Windows version is a single EXE; follow the actual asset and release instructions rather than guessing its filename.
 
 With a suitable source environment, run from the repository root:
 
@@ -78,28 +78,29 @@ Explain the choices plainly and let the user choose:
 | Template | Intended use | Explain |
 | --- | --- | --- |
 | Starter (“新号”) | Starting from the beginning | Low level, initial character/equipment; not the experience account's progress |
-| Max-level experience (“满级体验号”) | Trying characters, equipment, and stages | High levels and preset progress; equipment coverage follows template documentation and does not imply complete gameplay validation |
+| Max-level experience (“满级体验号”) | Trying characters and stages | Unlocks characters and outfits and sets supported stages to full stars using the V0.2.0 catalog; does not imply complete gameplay validation |
 
 Select the template at the top, click “使用模板新建” (Create from template), review the preview, and save to a **new, nonexistent filename**. Prefer `account.json` for delivery; if it exists in that folder, choose another location rather than overwrite the only old save.
 
 Use “首次登录” (First login) only for an eligible starter account. On Android, first verify support in the target build. At this guide's date it is available only at captain level 1, defaults off, and is canceled by level changes. **The full NS opening flow has not been verified: leave it off** unless current project documentation explicitly records subsequent validation.
 
-Template nickname/signature fields are read-only in the editor; ordinary saves allow editing. In-game changes follow client behavior. Do not unlock fields or modify templates to bypass restrictions.
+Name and signature fields are read-only in the editor for all saves; change them in the game. Do not bypass the restriction.
 
 ## 5. Edit an existing save
 
-Click “打开存档” (Open save), select the local copy, and change only requested items. Click “预览修改” (Preview changes), explain the changes and effects plainly, then save or save as according to the user's established intent.
+Click “打开存档” (Open save), select the local copy, and change only requested items. Basic and detailed pages share one working copy. Click “预览修改” (Preview changes), explain the accumulated changes, then save or save as according to the user's established intent.
 
 | Setting | Behavior at this guide's date; check current instructions |
 | --- | --- |
 | Captain level | Range 1–80; changing it clears current level EXP, does not upgrade characters/equipment, and grants no level-up rewards |
 | Coins, crystals, stamina, friendship points | Respect tool validation limits; do not bypass them |
-| Ordinary-save nickname/signature | Editable; template identity fields remain read-only |
-| Complete story/extra stages | Fills supported normal-story/extra progress and stars, marking related tasks claimed without granting rewards; not all Hard, Nightmare, or other modes |
-| Sakura Samsara | Starts at the selected cycle's beginning; skipping does not directly award rewards, replaying previous story may award story rewards again, and existing cycle-settlement claim records remain |
-| Abyss floor 32/rank | Floor 32 becomes challengeable, not completed; requires valid current-period state. Refresh the current abyss in-game and finish battle before exiting/exporting |
+| Name and signature | Read-only for all saves; change them in the game |
+| Valkyries, skills, outfits, equipment, materials | Select an item and check current values and limits; edit equipment by instance and fragments separately. Stigmata affixes are not edited |
+| Story and side stories | Choose a difficulty, chapter and stage or set all stars using the V0.2.0 catalog; no battle settlements are fabricated |
+| Sakura Samsara | Select a specific story; existing reward receipts are retained and no rewards are directly issued. Rewinding may be rejected when reward records are insufficient |
+| Abyss and Base | Choose an Abyss rank and target floor with a valid unlocked current state; supported rooms 3–5 allow level/expansion increases and read-only technology |
 
-Leaving progression options unchecked means no change, not clearing progress. Do not reset unrelated data. Changing abyss rank preserves current floor, items, and claimed rewards without awarding promotion rewards, but clears old-rank interactions and final-floor timing; temperature and opponents refresh on entry.
+Not applying a progression operation leaves it unchanged; do not reset unrelated data. Abyss edits preserve claimed rewards without granting promotion rewards. Changing rank clears old-rank interactions and final-floor timing; temperature and opponents refresh on entry.
 
 The tool detects external changes to the original file, backs up existing saves before saving, and prevents save-as/template targets from overwriting existing files. On conflict, check whether the game is still running or the wrong file was selected; do not remove validation to force a save. Identify the actual backup location and preserve both automatic and independent original backups.
 
@@ -107,7 +108,7 @@ The tool detects external changes to the original file, backs up existing saves 
 
 ### Android
 
-Prefer the game's startup-screen “导出当前存档” (Export current save) and “选择存档/重选存档” (Select/reselect save) functions. Export current progress, edit on the computer, then select the edited `account.json` and confirm replacement/old-save retention. See the [Android game guide](https://github.com/ClearwSea/BH2017-LOCRENASCI/blob/main/docs/agent-guide.en.md).
+Prefer the game's startup-screen “导出当前存档” (Export current save) and “选择存档/重选存档” (Select/reselect save) functions. Export and retain current progress before editing. V0.2.0 imports the selected save when starting the game and does not automatically back up the previous current save. See the [Android game guide](https://github.com/ClearwSea/BH2017-LOCRENASCI/blob/main/docs/agent-guide.en.md).
 
 For older standalone servers or other branches, establish the actual save location using the [Android instructions](使用方式-Android.md). App-private directories are normally inaccessible through ordinary USB file transfer; do not tell beginners to browse `/data/user/0/`. A server running on the computer uses its own save, not a file copied to the phone. Use ADB or similar tools only with the relevant access and authorization.
 
@@ -119,7 +120,7 @@ Use HOME → X to **fully close the game**; returning to HOME is insufficient. T
 sd:/switch/bh3_2017/server-stage3/data/account.json
 ```
 
-Check whether the current build changes that path, then restore the edited file as `account.json` to the original location. DBI accesses an SD-card file, not a system-save import; copy MTP files to the computer first. See the [NS game guide](https://github.com/ClearwSea/BH-NX-Ferculum/blob/main/docs/agent-guide.en.md). Do not transfer Android import procedures or first-login support conclusions directly to NS.
+Check whether the current build changes that path, then restore the edited file as `account.json` to the original location. DBI accesses an SD-card file, not a system-save import; copy MTP files to the computer first. V0.2.0 detailed progression rules have not been validated on NS; do not transfer Android support conclusions directly. See the [NS game guide](https://github.com/ClearwSea/BH-NX-Ferculum/blob/main/docs/agent-guide.en.md).
 
 ### Verify and recover
 
@@ -132,7 +133,7 @@ The companion offline version accepts arbitrary login credentials. This does not
 Running source requires neither game clients nor the original private project. After changes, run from the repository root:
 
 ```powershell
-python -B -m unittest test_save_editor
+python -B -m unittest discover
 ```
 
 To produce an EXE, check the [source instructions](README.md) and `requirements-build.txt`, then prepare dependencies under authorization:
@@ -143,7 +144,7 @@ python -m venv .build-env
 .\build_exe.cmd
 ```
 
-The output is `dist/BH3-V1.9-Save-Editor.exe`. Source includes `templates/` and `stage_catalog.json`; the original project's template-generation scripts and private inputs are absent, so do not assume all templates can be regenerated. Test the actual dependency-download network too; GitHub connectivity does not establish package-index connectivity.
+See `build_exe.cmd` for the output path; the single EXE includes the compact catalog. Templates are generated from the V0.2.0 catalog. See the [catalog notes](editor-catalog.md) for provenance and regeneration. Test the actual dependency-download network too; GitHub connectivity does not establish package-index connectivity.
 
 ## 8. Troubleshooting and handoff
 

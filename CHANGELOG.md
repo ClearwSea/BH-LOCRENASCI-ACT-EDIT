@@ -1,3 +1,15 @@
+## v0.8.4 · 深度存档编辑 / Detailed save editing
+
+扩展舰长、女武神、技能、服装、装备、材料、剧情、轮回、深渊与部分家园数据编辑；统一工作副本及预览保存流程，昵称和签名只读。进度规则对齐 BH2017-LOCRENASCI V0.2.0，轮回保留领奖回执；旧版 Android 与 NS 的深度功能尚未验证。
+
+Expand editing of Captain data, Valkyries, skills, outfits, equipment, materials, story, Sakura Samsara, Abyss and selected Base data. Use one working copy with preview and save; names and signatures are read-only. Progression rules target BH2017-LOCRENASCI V0.2.0 and preserve Sakura reward receipts. The expanded features have not been validated on older Android builds or NS.
+
+## v0.8.3 · 女武神与装备容量 / Valkyries and equipment capacity
+
+新增装备仓库容量调整，以及女武神解锁、等级、评阶和推荐配装功能。该版本实际发布程序使用的源码此前未完整进入公开仓库。
+
+Added equipment capacity editing and Valkyrie unlock, level, rank and recommended equipment controls. The source used for the published executable was not fully included in the public repository at that time.
+
 ## v0.8.2 · 服装解锁 / Costume ownership
 
 新增服装解锁选项：保持不变、全部解锁、全部锁定。覆盖46套支持服装，仅授予已有角色；锁定时换回默认，保留未知服装与其他进度。支持预览、备份及保存后重载。客户端隐藏规则不变。
